@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+/**
+ * Copy and paste this HTML snippet between the <body></body> tags of your webpage
+ * to embed the video player directly into your page.
+ */
+-->
+<div id="bg_player_location">
+  <a href="http://www.adobe.com/go/getflashplayer">
+  <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+  </a>
+  </div>
+  <script type="text/javascript" src="http://player.bc.cdn.bitgravity.com/10/jquery.js"></script>
+  <script type="text/javascript" src="http://player.bc.cdn.bitgravity.com/10/functions.js"></script>
+  <script type="text/javascript" src="http://player.bc.cdn.bitgravity.com/10/swfobject.js"></script>
+  <script type="text/javascript">
+  var flashVars = {};
+  flashVars.File = "http://srishridisaitrust.live.cdn.bitgravity.com/srishridisaitrust/live/feed01";
+  flashVars.Mode = "live";
+  flashVars.AutoPlay = "true";
+  flashVars.streamType = "live";
+  flashVars.ForceReconnect = "0";
+  var params = {};
+  params.allowFullScreen = "true";
+  params.allowScriptAccess = "always";
+  swfobject.embedSWF(info.BitGravityswf, "bg_player_location", "640", "500", info.swfVersionStr, info.xiSwfUrlStr, flashVars, params, attributes);
+  </script>
+</body>
+</html>
